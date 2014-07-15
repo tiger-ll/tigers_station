@@ -63,6 +63,7 @@ background-color: #393939;
 	
 .dropdown-menu{
 	-webkit-animation:flipInX .5s;
+	animation:flipInX .5s;
 	font-size:1em;
 	border:none;
 	background-color: rgba(255,255,255,.60);
@@ -235,8 +236,11 @@ padding:0px;
 	position: absolute;
 	transform: perspective(1000px)  rotateX(0deg);
 	-webkit-transform: perspective(1000px)  rotateX(0deg);
+	
 	transition:-webkit-transform 0.2s linear 0s;
+	transition:transform 0.2s linear 0s;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	color:#FAFAFA;
 	background-color: #636363;
 }
@@ -246,7 +250,9 @@ padding:0px;
 	transform:perspective(1000px) rotateX(180deg);
 	-webkit-transform:perspective(1000px) rotateX(180deg);
 	transition:-webkit-transform 0.2s linear 0s;
+	transition:transform 0.2s linear 0s;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	
 	
 	
@@ -256,17 +262,22 @@ padding:0px;
 
 .flip3d:hover > .text-front{
 	-webkit-transform:perspective(1000px) rotateX(-180deg);
+	transform:perspective(1000px) rotateX(-180deg);
 	transition:-webkit-transform 0.3s linear 0s;
+	transition:transform 0.3s linear 0s;
 }
 
 .flip3d:hover > .text-back{
 	-webkit-transform:perspective(1000px) rotateX(0deg);
+	transform:perspective(1000px) rotateX(0deg);
 	transition:-webkit-transform 0.3s linear 0s;
+	transition:transform 0.3s linear 0s;
 }
 
   #container{
 	  text-align: center;
 	  -webkit-animation: fadeInDown 1s;
+	  animation: fadeInDown 1s;
   }
   #information {
     margin-top: 1em;
