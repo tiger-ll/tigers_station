@@ -5,7 +5,8 @@
 
 
 body{
-	background-image: url(../images/web.png);
+    margin-bottom: 20%;
+	/*background-image: url(../images/web.png);*/
 	background-repeat:no-repeat;
 	background-size:cover;
     background-attachment:fixed;
@@ -275,6 +276,7 @@ padding:0px;
 }
 
   #container{
+      margin-top: 10%;
 	  text-align: center;
 	  -webkit-animation: fadeInDown 1s;
 	  animation: fadeInDown 1s;
