@@ -16,19 +16,24 @@ body{
 .navbar-default{ 
 border:none;
 
-background-color:rgba(0,0,0,0.10);
+background-color: #BBF0F2;
 padding-top:20%;
+
 
 }
 
 .navbar{
-
+	margin-bottom:0px;
 	border-radius: 0px;
 	
 }
 
+.eff{
+	background-color: #FFFFFF;}
 
-
+.navbar-toggle{
+	border:none;
+}
 
 
 	
@@ -40,15 +45,22 @@ padding-top:20%;
 	
 .navbar, .navbar-brand{
 font-size:1.2em;
+font-style:oblique;
 }
 
 .navbar-brand{
  -webkit-animation: fadeInDown 1s;
  animation: fadeInDown 1s;
+ font:bold;
+ background-color:#208E92;
 }
 
 
-.navbar-right {color:#FCFCFC;
+
+.navbar-default .navbar-brand{
+	color:#FFFFFF;}
+
+.navbar-left {
  -webkit-animation: fadeInDown 1.5s;
  animation: fadeInDown 1.5s;
 }
@@ -63,12 +75,26 @@ background-color: #393939;
 	}
 	
 .dropdown-menu{
+	animation:flipInX .5s;
 	-webkit-animation:flipInX .5s;
+	
 	animation:flipInX .5s;
 	font-size:1em;
 	border:none;
-	background-color: rgba(255,255,255,.60);
+	background-color: rgba(255,255,255,.7);
 	border-radius:0px;}
+
+.dropdown-menu > li > a{
+	color:#EDFDFE;
+	}
+#dd1{background-color: #A1E6E9;
+}
+#dd2{background-color: #84DFE2;
+}
+#dd3{background-color: #73DADE;
+}
+
+
 
 
 @media (max-width: 768px){
@@ -81,7 +107,74 @@ background-color: #393939;
 }
 
 
+.icon-barc, .icon-barc:before, .icon-barc:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 4px;
+  width: 27px;
+  background: #1F8184;
+  position: absolute;
+  display: block;
+  content: '';
+  top: 8px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
+.navbar-toggle:hover .icon-barc:before {
+  -webkit-will-change: -webkit-transform;
+  -moz-will-change: -moz-transform;
+  will-change: transform;
+  -webkit-transform: translate3d(0, -4px, 0);
+  -moz-transform: translate3d(0, -4px, 0);
+  -ms-transform: translate3d(0, -4px, 0);
+  -o-transform: translate3d(0, -4px, 0);
+  transform: translate3d(0, -4px, 0);
+}
+
+.navbar-toggle:hover .icon-barc:after {
+  -webkit-will-change: -webkit-transform;
+  -moz-will-change: -moz-transform;
+  will-change: transform;
+  -webkit-transform: translate3d(0, 4px, 0);
+  -moz-transform: translate3d(0, 4px, 0);
+  -ms-transform: translate3d(0, 4px, 0);
+  -o-transform: translate3d(0, 4px, 0);
+  transform: translate3d(0, 4px, 0);
+}
+
+.sr-onlyc{
+  width: 27px;
+  height: 21px;
+  position: relative;
+  display: block;
+  top: 40px;
+  left: 40px;
+}
+
+.navbar-toggle{
+	margin-bottom:0px;
+	bottom:-6px;
+}
+
+.navbar-default .navbar-toggle{
+	background-color: transparent;
+}
+.navbar-default .navbar-toggle:hover {
+	background-color:transparent;
+}
+	
+
+.icon-barc:before {
+  top: -8px;
+}
+
+.icon-barc:after {
+  bottom: -8px;
+}
 /*carosel*/
 
 .item{
@@ -322,7 +415,7 @@ padding:0px;
             transform-style: preserve-3d;
   }
 
-  #portfolio div {
+  #portfolio div{
     display: inline-block;
     position: relative;
     vertical-align: top;
@@ -336,7 +429,7 @@ padding:0px;
       text-align: left;
       position: absolute;
       color: #fff;
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.1);
       width: 90px;
       padding: 5px 15px 7px;
       z-index: 1;
