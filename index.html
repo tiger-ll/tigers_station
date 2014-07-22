@@ -1,7 +1,9 @@
 <!doctype html>
-<html><head>
+<html>
+<head>
 <meta charset="UTF-8">
 <title>Tiger's Homepage</title>
+<link href="css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/tigercss.css">
 
@@ -38,9 +40,9 @@
         <li class="dropdown">
           <a href="#" class=" eff dropdown-toggle" data-toggle="dropdown">About Me<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a id="dd1" class="eff" href="#">Bio</a></li>
-            <li><a id="dd2" class="eff" href="#">Contact</a></li>
-            <li><a id="dd3" class="eff" href="#">Something else here</a></li>
+            <li><a  class="eff dd1" href="#">Bio</a></li>
+            <li><a  class="eff dd2" href="#">Contact</a></li>
+            <li><a  class="eff dd3" href="#">Something else here</a></li>
           </ul>
         </li>
       </ul>
@@ -50,7 +52,7 @@
 
 
 
-<div id="carousel-example-generic" class="carousel slide col-md-9 col-lg-9" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide col-md-10 col-lg-10" data-ride="carousel">
   <!-- Indicators -->
 
   <ol class="carousel-indicators">
@@ -87,16 +89,43 @@
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
-
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 flip3d">
-<div class="text-front"> <h1>THIS IS FRONT</h1> Donec mollis sagittis viverra. Vivamus tellus urna, sagittis varius suscipit in, interdum ut neque. Vestibulum sapien tortor, rutrum eget iaculis ut, tempor eu sapien. Quisque congue vel justo pretium pretium. Quisque quis bibendum tortor. Ut nec dictum diam. Quisque lobortis lacus non pulvinar gravida. Suspendisse eleifend, purus ac ullamcor
-</div>
-
-<div class="text-back">
-<h1>THIS IS BACK</h1> Lorem dolor elit. Donec mollis sagittis viverra. Vivamus tellus urna, sagittis varius suscipit in, interdum ut neque. Vestibulum sapien tortor, rutrum eget iaculis ut, tempor eu sapien. Quisque congue vel justo pretium pretium. Quisque quis bibendum tortor. Ut nec dictum diam. Quisque lobortis lacus non pulvinar gravida. Suspendisse eleifend
-</div>
-
-</div>
+<!--Flip Social Icons-->
+<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 flipBox">
+ <div class="flip3d">
+ <div class="text-front"> 
+ <i class="fa fa-facebook-square fa-4x"></i>
+ </div>
+ <div class="text-back fbk">
+ <i class="fa fa-facebook-square fa-4x"> </i>
+ </div>
+ </div>
+ 
+  <div class="flip3d">
+ <div class="text-front dd1"> <h1>THIS IS FRONT</h1>
+ </div>
+ <div class="text-back">
+ <h1>THIS IS BACK</h1>
+ </div>
+ </div>
+ 
+  <div class="flip3d">
+ <div class="text-front dd2"> <h1>THIS IS FRONT</h1>
+ </div>
+ <div class="text-back">
+ <h1>THIS IS BACK</h1>
+ </div>
+ </div>
+ 
+   <div class="flip3d">
+ <div class="text-front dd3"> <h1>THIS IS FRONT</h1>
+ </div>
+ <div class="text-back">
+ <h1>THIS IS BACK</h1>
+ </div>
+ </div>
+ 
+ 
+ 
 </div>
 </div>
 
@@ -140,7 +169,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/color.js"></script>
     <script src="js/tigerjs.js"></script>
-      <script> if(!Modernizr.csstransforms3d) document.getElementById('information').style.display = 'block'; </script>
+    <script> if(!Modernizr.csstransforms3d) document.getElementById('information').style.display = 'block'; </script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
   <script src="js/demo.js"></script>
   <script src="js/modernizr.custom.34807.js"></script>
