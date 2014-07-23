@@ -555,9 +555,7 @@ padding:0px;
 }
 
   @media (max-width: 320px){
-	  body, .container-fluid,.container{
-		  width: 320px;
-	  }
+	  
 .item{
 	height:300px;
 	}
