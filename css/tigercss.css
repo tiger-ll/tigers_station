@@ -543,7 +543,7 @@ padding:0px;
 
   @media (max-width: 480px){
 .item{
-	height:200px;
+	height:400px;
 	}
 	
 .flip3d{
@@ -557,6 +557,27 @@ padding:0px;
 }
 
 }
+
+  @media (max-width: 320px){
+	  .container{
+		  width: 320px;
+	  }
+.item{
+	height:300px;
+	}
+	
+.flip3d{
+	height:200px;
+}
+.text-front{
+	height:200px;
+}
+.text-back{
+	height:200px;
+}
+
+}
+
 
 /*color*/
 .dd1{background-color: #A1E6E9;
