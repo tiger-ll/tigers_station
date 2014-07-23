@@ -213,9 +213,51 @@ background-color: #393939;
 	padding:0px;
 }
 
+.title{
+	padding-top:20px;
+	background-color:#1F8184;
+	color:#E1ECEC;
+	text-align:right;
 
+}
+
+.director{
+	margin-top:10%;
+	font-size:medium;
+	color: #979797;
+}
 /*Animation CSS*/
 
+.btn-tiger, btn-primary{
+	height:60px;
+	color:#1F8184;
+	border-color:#1F8184;
+    padding: 10px 20px;
+    line-height: 1;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    letter-spacing: 1px;
+    outline: none;
+    position: relative;
+	background-color:transparent;
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	border:solid;
+	
+}
+
+.btn-tiger:hover{
+	border:solid;
+    color: white;
+    background-color: #1F8184;
+	border-color:#1F8184;
+}
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -321,6 +363,7 @@ background-color: #393939;
     transform: perspective(400px);
   }
 }
+
 
 /*flipElements*/
 .flipBox{
