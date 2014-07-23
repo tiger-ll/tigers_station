@@ -1,11 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald|Lobster);
-
 @charset "UTF-8";
 /* CSS Document */
 
 
 body{
     margin-bottom: 20%;
+	font-family: 'Roboto', sans-serif;
 	/*background-image: url(../images/web.png);*/
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -43,16 +42,18 @@ padding-top:20%;
 	
 	/* font */
 	
-.navbar, .navbar-brand{
+.navbar-nav{
 font-size:1.2em;
 font-style:oblique;
+
 }
 
 .navbar-brand{
  -webkit-animation: fadeInDown 1s;
  animation: fadeInDown 1s;
- font:bold;
+ font-weight:900;
  background-color:#208E92;
+ font-size:1.5em;
 }
 
 
