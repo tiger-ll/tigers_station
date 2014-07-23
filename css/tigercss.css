@@ -11,7 +11,12 @@ body{
     background-attachment:fixed;
     background-position:center;}
 
-	
+#headerCap{
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	color:	#1F8184;
+}
 .navbar-default{ 
 border:none;
 
