@@ -122,11 +122,11 @@ background-color: #393939;
   border-radius: 1px;
   height: 4px;
   width: 27px;
-  background: #1F8184;
+  background: #5B5B5B;
   position: absolute;
   display: block;
   content: '';
-  top: 8px;
+  top:8px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -253,6 +253,7 @@ background-color: #393939;
     -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	border:solid;
+	margin:20px;
 	
 }
 
