@@ -8,23 +8,36 @@ body{
 	/*background-image: url(../images/web.png);*/}
 
 #headerCap{
-	height:150px;
+	height:400px;
 	text-align:center;
-	margin-top:130px;
+	padding-top:130px;
 	margin-left:auto;
 	margin-right:auto;
-	color:	#1F8184;
+	color: rgba(225,236,236,1.00);
+	padding－bottom:50px;
+	
 }
+
+#headerCap > p{
+	margin:0 20px;
+	}
 #headerCap > h1{
 	font-weight:900;
 	}
 .navbar-default{ 
 border:none;
 height:400px;
-background-color: #BBF0F2;
-
-
+background-color: rgba(31,129,132,.50);
+background-size:cover;
 }
+
+.b-cover {
+	 -webkit-animation: fadeIn 1s;
+    max-width: 100%;
+    width: 100%;
+	background-attachment: fixed;
+}
+
 
 .navbar{
 	margin-bottom:0px;
@@ -54,8 +67,8 @@ font-style:oblique;
 }
 
 .navbar-brand{
- -webkit-animation: fadeInDown 1s;
- animation: fadeInDown 1s;
+ -webkit-animation: fadeInDown 1.5s;
+ animation: fadeInDown 1.5s;
  font-weight:900;
  background-color:#208E92;
  font-size:1.5em;
@@ -64,11 +77,13 @@ font-style:oblique;
 
 
 .navbar-default .navbar-brand{
-	color:#FFFFFF;}
+	color:#FFFFFF;
+
+}
 
 .navbar-left {
- -webkit-animation: fadeInDown 1.5s;
- animation: fadeInDown 1.5s;
+ -webkit-animation: fadeInDown 1s;
+ animation: fadeInDown 1s;
 }
 
 .item{
@@ -93,19 +108,21 @@ background-color: #393939;
 .dropdown-menu > li > a{
 	color:#EDFDFE;
 	}
-
-
-.navbar-default .container-fluid{
-	  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  -webkit-transform: translate3d(0, 0, 0);
-       -o-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  top:0;
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+	color:#EDFDFE;
 }
 
+.container-fluid{
+  position: fixed;
+  width:100%;
+  top:0;
+}
+.container-fluid{
+	  z-index: 1000;
+	  -webkit-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
 
 @media (max-width: 768px){
 .navbar{
@@ -122,7 +139,7 @@ background-color: #393939;
   border-radius: 1px;
   height: 4px;
   width: 27px;
-  background: #5B5B5B;
+  background: rgba(187,240,242,1.00);
   position: absolute;
   display: block;
   content: '';
@@ -253,7 +270,7 @@ background-color: #393939;
     -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	border:solid;
-	margin:20px;
+	float:right;
 	
 }
 
@@ -263,6 +280,32 @@ background-color: #393939;
     background-color: #1F8184;
 	border-color:#1F8184;
 }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -368,7 +411,77 @@ background-color: #393939;
     transform: perspective(400px);
   }
 }
+/*Work Display*/
 
+.wrapper{
+	padding:0;
+	margin:0;
+	margin-top:10%;
+	}
+.works{
+	padding:0;
+	margin:0;
+}
+.thumbnail{
+	border:none;
+	padding:0px;
+	border-radius:0px;
+	overflow:hidden;
+	}
+
+.thumbnail > a > img
+{
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.25, 0.25, 0.75);
+  -moz-transition: all 0.2s cubic-bezier(0.75, 0.25, 0.25, 0.75);
+  -ms-transition: all 0.2s cubic-bezier(0.75, 0.25, 0.25, 0.75);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.25, 0.25, 0.75);
+  transition: all 0.2s cubic-bezier(0.75, 0.25, 0.25, 0.75);}
+  
+.thumbnail:hover .eff3::after,
+.thumbnail:active .eff3::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:url(../images/overlay.png);
+  opacity: 0.5;
+}
+  
+.thumbnail > a:hover .thumbs, 
+.thumbnail > a:active .thumbs{
+  position: relative;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.caption{
+	overflow: hidden;
+
+}
+
+.thumbnail > span {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 0%;
+  background: #000;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.eff3{
+		overflow:hidden;
+}
 
 /*flipElements*/
 .flipBox{
