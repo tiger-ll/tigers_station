@@ -21,5 +21,27 @@ $('.navbar-toggle').mouseenter(function(){$('.icon-bar').animate({backgroundColo
 $('.navbar-toggle').mouseleave(function(){$('.icon-bar').animate({backgroundColor: 'black'})
 });
 
+var $container = $('#container');
+$('#container').isotope({
+  // options...
+  
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+
+$('#filters').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  
+$container.isotope({ filter: filterValue });
+});
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
+    });
+  });
+
+
 });
 // JavaScript Document*/

@@ -1,95 +1,148 @@
-<!doctype html>
-<html><head>
-<meta charset="UTF-8">
-<title>Profolio Display</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiger's Homepage</title>
+<link href="css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/tigercss.css">
-
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,400italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+
 <div class="container">
+<div class="row">
+<div class="b-cover" style="background-image:url(images/abstract-q-g-1024-768-7.jpg);">
+<nav class="navbar navbar-default" role="navigation" >
+    <div id="headerCap">
+    <h1>Still Under-Construction</h1>
+    <i class="fa fa-circle-o-notch fa-4x fa-spin"></i>
+    <p>you are very welcome to visit my github and share amazing idea with me</p>
+    </div>
 
-
-<nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
+    
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="sr-onlyc"></span>
+        
+        <span class="icon-barc"></span>
+        
       </button>
-      <a class="navbar-brand" href="#">Tiger's Station</a>
+      <a class="navbar-brand" href="index.html">Tiger's Station</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="eff" href="index.html">Home</a>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a class="eff eff2" href="index.html">Home</a>
         </li>
         
-        <li><a class="eff" href="work.html">My Works</a>
+        <li><a class="eff eff2" href="work.html">My Works</a>
         </li>
         <li class="dropdown">
-          <a href="#" class=" eff dropdown-toggle" data-toggle="dropdown">About Me<b class="caret"></b></a>
+          <a href="#" class=" eff eff2 dropdown-toggle" data-toggle="dropdown">About Me<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a class="eff" href="#">Bio</a></li>
-            <li><a class="eff" href="#">Contact</a></li>
-            <li><a class="eff" href="#">Something else here</a></li>
+            <li><a  class="eff dd1" href="#">Bio</a></li>
+            <li><a  class="eff dd2" href="#">Contact</a></li>
+            <li><a  class="eff dd3" href="#">Something else here</a></li>
           </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+</div><!-- /.cover -->
+</div> 
+</div> 
 
-<div id="container">
-    
-    <span id="information" style="display:none">Your browser doesn't support CSS3 3D Transform</span>
-    <h1>Title here TBD</h1>
-    
-    <div id="portfolio"></div>
-    
-    <ul id="portfolio-item">
-      <li><img src="images/dumptruck_teaser.jpeg" alt="Dump Truck" /></li>
-      <li><img src="images/rrwooo_rrwooo_teaser.jpeg" alt="Rrwooo" /></li>
-      <li><img src="images/dozer_teaser.jpeg" alt="Dozer" /></li>
-      <li><img src="images/ltah_teaser.jpeg" alt="Ltah" /></li>
-      <li><img src="images/pirates_teaser.jpeg" alt="Pirates" /></li>
-      <li><img src="images/rustler_teaser.jpeg" alt="Rustler" /></li>
-      <li><img src="images/satellite_teaser.jpeg" alt="Satellite" /></li>
-      <li><img src="images/werewolf_teaser.jpeg" alt="Werewolf" /></li>
-      <li><img src="images/box_socks_teaser.jpeg" alt="Box Socks" /></li>
-      <li><img src="images/capt_kidd_teaser.jpeg" alt="Capt Kidd" /></li>
-      <li><img src="images/bat_bedtime_teaser.jpeg" alt="Bat Bedtime" /></li>
-      <li><img src="images/grrr_teaser.jpeg" alt="Grrr" /></li>
-      <li><img src="images/eensy_teaser.jpeg" alt="Eensy" /></li>
-      <li><img src="images/derby_lady_teaser.jpeg" alt="Derby Lady" /></li>
-      <li><img src="images/carrot_teaser.jpeg" alt="Carrot" /></li>
-      <li><img src="images/brush_teaser.jpeg" alt="Brush" /></li>
-    </ul>
-    
-    <nav id="navigation">
-      <a href="#1" class="nav selected" data-page="1">1</a>
-      <a href="#2" class="nav" data-page="2">2</a>
-      <a href="#3" class="nav" data-page="3">3</a>
-      <a href="#4" class="nav" data-page="4">4</a>
-    </nav>
-    
-  </div>  
+<!--Work-->
+
+<div class="container">
+<div id="filters" class="row btn-group"  role="toolbar">
+  <button class="btn btn-tiger" data-filter="*">show all</button>
+  <button class="btn btn-tiger" data-filter=".metal">metal</button>
+  <button class="btn btn-tiger" data-filter=".transition">transition</button>
+  <button class="btn btn-tiger" data-filter=".alkali, .alkaline-earth">alkali & alkaline-earth</button>
+
+</div>
+</div>
+
+<div id="container" class="row wrapper">
+
+
+  <div class="item metal col-sm-6 col-md-3 col-xs-6 works" data-category="metal">
+    <div class="thumbnail">
+      <a class="eff3" href="#" ><img class="thumbs" src="images/abstract-q-c-500-300-3.jpg" alt="..."></a>
+      <div class="caption">
+        <h3>Project label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+      </div>
+    </div>
+  </div>
   
+    <div class="item metal col-sm-6 col-md-3 col-xs-6 works">
+    <div class="thumbnail">
+      <a class="eff3" href="#" ><img class="thumbs" src="images/fashion-q-c-500-300-10.jpg" alt="..."></a>
+      <div class="caption">
+        <h3>Project label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item col-sm-6 col-md-3 col-xs-6 works">
+    <div class="thumbnail">
+      <a class="eff3" href="#" ><img class="thumbs" src="images/people-q-c-500-300-1.jpg" alt="..."></a>
+      <div class="caption">
+        <h3>Project label</h3>
+        <p>Aenean commodo ligula eget dolor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item col-sm-6 col-md-3 col-xs-6 works">
+    <div class="thumbnail">
+      <a class="eff3" href="#" ><img class="thumbs" src="images/sports-q-c-500-300-1.jpg" alt="..."></a>
+      <span></span>
+      <div class="caption">
+        <h3>Project label</h3>
+        <p>Lorem ipsum dolor sit amett. Aenean commodo ligula eget dolor.</p>
+      </div>
+    </div>
+  </div>
 
+</div>
 
+   <div class="container director">
+   <div class="row">
+   <div class="col-md-9 col-lg-9 col"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m</p></div>
+   <div class="col-md-3 col-lg-3"><button class=" btn-tiger btn-primary">View More</button></div>
+   </div>
+   </div>
+<div class="row wrapper footer">
+<div class="col-sm-12 col-md-6"><h2>Thank you for visit my site!</h2> <p>This web site is designed and built by Tiger Liu</p>
+</div>
+<div class="col-sm-12 col-md-6"><h3>Contact me</h3>
+<p>Email: lliu6@pratt.edu</p>
+<p>Tel:(786)395-0472</p>
+<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+<a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+<a href="#"><i class="fa fa-github fa-2x"></i></a>
+<a href="#"><i class="fa fa-wechat fa-2x"></i></a>
+</div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/color.js"></script>
     <script src="js/tigerjs.js"></script>
-      <script> if(!Modernizr.csstransforms3d) document.getElementById('information').style.display = 'block'; </script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script> if(!Modernizr.csstransforms3d) document.getElementById('information').style.display = 'block'; </script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
   <script src="js/demo.js"></script>
   <script src="js/modernizr.custom.34807.js"></script>
