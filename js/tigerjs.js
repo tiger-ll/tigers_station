@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+//colorAnimation
 $('.eff').mouseenter(function(){$(this).animate({backgroundColor: '#E4D8B8'})
 });
 $('.eff2').mouseleave(function(){$(this).animate({backgroundColor: 'white'})
@@ -20,7 +21,7 @@ $('.navbar-toggle').mouseenter(function(){$('.icon-bar').animate({backgroundColo
 
 $('.navbar-toggle').mouseleave(function(){$('.icon-bar').animate({backgroundColor: 'black'})
 });
-
+//isotope
 var $container = $('#container');
 $('#container').isotope({
   // options...
