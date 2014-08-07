@@ -6,6 +6,14 @@ body{
 	font-family: 'Roboto', sans-serif;
 	/*background-image: url(../images/web.png);*/}
 
+a{
+	color:rgba(255,255,255,1.00);
+	}
+a:hover{
+	color: #E1ECEC;
+	text-decoration:none;
+	}
+
 #headerCap{
 	height:400px;
 	text-align:center;
@@ -104,6 +112,8 @@ font-style:oblique;
 	margin:0px;
 	padding:0px;
 }
+
+
 
 #navInWork{
 	height:auto;
@@ -708,3 +718,11 @@ padding:0px;
   opacity: 0.4;
   overflow:hidden;
 	}
+	
+#playBtn{
+	position:absolute;
+	bottom:30%;
+	left:44%;
+	color: rgba(31,129,132,.60);
+	}
+
