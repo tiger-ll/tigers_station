@@ -3,7 +3,7 @@ $(document).ready(function(){
 //colorAnimation
 $('.eff').mouseenter(function(){$(this).animate({backgroundColor: '#E4D8B8'})
 });
-$('.eff2').mouseleave(function(){$(this).animate({backgroundColor: 'white'})
+$('.eff2').mouseleave(function(){$(this).animate({backgroundColor: 'rgba(255,255,255,0.8)'})
 });
 
 $('a.eff.dd1').mouseleave(function(){$(this).animate({backgroundColor: '#A1E6E9'})
@@ -35,7 +35,7 @@ $('#filters').on( 'click', 'button', function() {
   
 $container.isotope({ filter: filterValue });
 });
-  $('.button-group').each( function( i, buttonGroup ) {
+  $('.btn-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
     $buttonGroup.on( 'click', 'button', function() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
