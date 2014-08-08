@@ -15,7 +15,6 @@ a:hover{
 	}
 
 #headerCap{
-	height:400px;
 	text-align:center;
 	padding-top:130px;
 	margin-left:auto;
@@ -44,7 +43,6 @@ a:hover{
 	}
 .navbar-default{ 
 border:none;
-height:400px;
 background-color: rgba(31,129,132,.50);
 background-size:cover;
 }
