@@ -111,7 +111,9 @@ font-style:oblique;
 	padding:0px;
 }
 
-
+#AbtTxt{
+	text-align:justify;
+}
 
 #navInWork{
 	height:auto;
@@ -641,14 +643,12 @@ padding:0px;
 
 .abt{
 	margin-top:2%;
+	margin-bottom:2%;
 		overflow:hidden;
 	background:#1F8184;
 	color:#E1ECEC;
 	}
 
-.content{
-	margin-top:2%;
-	}
 
 
   @media (max-width: 990px){
@@ -698,7 +698,6 @@ padding:0px;
 }
 
 #pic1{
-    margin-right:-15px;
 	height:100%;
 	display:block;
 }
@@ -722,3 +721,6 @@ padding:0px;
 	color: rgba(31,129,132,.60);
 	}
 
+#tigersPp{
+	margin:0;
+}
