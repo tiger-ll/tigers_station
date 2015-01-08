@@ -617,6 +617,7 @@ padding:0px;
 
 
 #container{
+		height: 600px;
       margin-top: 10%;
 	  -webkit-animation: fadeIn 1s;
 	  animation: fadeIn 1s;
