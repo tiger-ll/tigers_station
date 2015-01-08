@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="tag:adobe.com,2012-03:edge:oam:compid:EDGE-497508216" name="RABIT2" version="1">
+
+  <description type="text/html"><![CDATA[Widget Exported from Adobe Edge (V1.DW.Edge)]]></description>
+  <category name="Adobe Edge Animation"/>
+
+  <remarks>Compatible with: InDesign CC, Dreamweaver CC, Muse</remarks>
+
+  <icon src="images/icon.png" width="1100" height="800" />
+
+  <require type="other" src="RABIT2.html" />
+  <require type="other" src="media/bounce.wav" />
+  <require type="other" src="media/Podington_Bear_-_Kitten.mp3" />
+  <require type="other" src="media/talk.wav" />
+
+  <require type="javascript" src="RABIT2_edge.js" />
+  <require type="javascript" src="edge_includes/edge.5.0.0.min.js" />
+  <require type="javascript" src="js/jquery-2.0.3.min.js" />
+
+  <require type="image" src="images/BODY.png" />
+  <require type="image" src="images/EARS.png" />
+  <require type="image" src="images/EYES.png" />
+  <require type="image" src="images/FACE.png" />
+  <require type="image" src="images/final-green-logo.jpg" />
+  <require type="image" src="images/final-green-logo－opacity.png" />
+  <require type="image" src="images/icon.png" />
+  <require type="image" src="images/LIPS.png" />
+  <require type="image" src="images/logo.png" />
+  <require type="image" src="images/Paris-SM.png" />
+  <require type="image" src="images/Parisbox.png" />
+  <require type="image" src="images/Poster.png" />
+  <require type="image" src="images/Poster2.png" />
+  <require type="image" src="images/TAIL.png" />
+
+  <require type="folder" src="edge_includes" />
+  <require type="folder" src="images" />
+  <require type="folder" src="js" />
+  <require type="folder" src="media" />
+
+
+  <content><![CDATA[
+    <div class="EDGE-497508216"></div>
+  ]]></content>
+   
+  <properties name="Properties">
+    <property name="default-width" defaultValue="1100" hidden="true"/>
+    <property name="default-height" defaultValue="800" hidden="true"/>
+    <property name="resizable" defaultValue="true" hidden="true"/>				
+		<property name="centering" defaultValue="horizontal" hidden="true"/>				
+		<property name="scaling" defaultValue="width" hidden="true"/>
+    <property name="html-page" defaultValue="RABIT2.html" hidden="true"/>
+  </properties>
+
+</widget>
