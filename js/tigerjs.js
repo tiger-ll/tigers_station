@@ -23,13 +23,14 @@ $('.navbar-toggle').mouseleave(function(){$('.icon-bar').animate({backgroundColo
 });
 //isotope
 var $container = $('#container');
-$('#container').isotope({
+$(window).load(function(){
+  $('#container').isotope({
   // options...
   
   itemSelector: '.item',
   layoutMode: 'fitRows'
+  });
 });
-
 $('#filters').on( 'click', 'button', function() {
   var filterValue = $(this).attr('data-filter');
   
