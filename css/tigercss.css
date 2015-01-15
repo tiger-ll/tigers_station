@@ -650,7 +650,12 @@ padding:0px;
 	color:#E1ECEC;
 	}
 
-
+.subtitle{ 
+	display: inline;
+	padding: 2rem 1rem;
+	background-color: #E1ECEC;
+	color: #1F8184;
+ }
 
   @media (max-width: 990px){
 
